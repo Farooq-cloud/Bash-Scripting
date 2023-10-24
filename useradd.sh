@@ -43,5 +43,10 @@ echo
 echo "Please specify the password inactivity period (in days):"
 read inactivity_period
 echo
+#Create the user with the corrected double quotes and password inactivity period
+useradd "$user" -c "$desc" -f "$inactivity_period"
+echo "User has been created successfully"
+echo “$user has been created succesfully”
+
 
 
